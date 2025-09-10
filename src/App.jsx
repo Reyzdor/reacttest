@@ -21,7 +21,10 @@ export default function App() {
         <WayToTeach {... ways[3]} />
         </ul>
       </section>
-        
+      <section>
+        <h3>Чем мы отличается от других</h3>
+
+      </section>
       </main>
     </div>
   )
