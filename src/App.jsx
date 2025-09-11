@@ -1,9 +1,13 @@
 import Header from "./components/Header"
 import { ways } from "./data"
 import WayToTeach from "./components/WayToTeach"
-
+import Button from "./components/Button/Button"
 
 export default function App() {
+  function handleClick(ways) {
+    console.log('button click')
+  }
+
   return (
     <div>
       <Header />
@@ -23,7 +27,7 @@ export default function App() {
       </section>
       <section>
         <h3>Чем мы отличается от других</h3>
-
+        <Button onClick={() => handleClick('title')}>Концентрация</Button>
       </section>
       </main>
     </div>
