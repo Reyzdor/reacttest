@@ -2,8 +2,13 @@ import Header from "./components/Header"
 import { ways } from "./data"
 import WayToTeach from "./components/WayToTeach"
 import Button from "./components/Button/Button"
+import { useState } from "react"
 
 export default function App() {
+  function ButtonClick(onClicks) {
+    console.log(ButtonClick);
+  }
+
   function handleClick(ways) {
     console.log('button click')
   }
@@ -17,6 +22,8 @@ export default function App() {
       </header>
 
       <main>
+        <button onClick={ButtonClick}>Click</button>
+        <button onClick={increment}>Click</button>
       <section>
         <ul>
         <WayToTeach title={ways[0].title} description={ways[0].description}/>
